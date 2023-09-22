@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilos para el cuadro de diálogo modal */
+        .modal {
+  display: flex;
+  justify-content: center; /* Centrar en el eje X */
+  align-items: center; /* Centrar en el eje Y */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #888;
+  text-align: center;
+}
+
+  #modal-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #modal-message {
+    font-size: 18px;
+  }
+
+  #close-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+        .my-button {
+        padding: 10px 20px;
+        background-color: hsl(293, 92%, 51%);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        .my-button:hover {
+        background-color: hsl(293, 92%, 51%);
+        }
+        .my-button:active {
+        background-color: hsl(293, 92%, 51%);
+        
+        }
+        body{
+          
+            background: rgb(156, 46, 138);
+        }
+
+        
+      </style>
+</head>
+<body>
+   
+<!-- Cuadro de diálogo modal oculto por defecto -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div id="modal-title">Para tí NAT</div>
+    <div id="modal-message"> Presiona aquí y verás tu sorpresa :3</div>
+    <button id="close-button" onclick="cerrarAlertaPersonalizada()">A ver dijo el ciego :v</button>
+  </div>
+</div>
+
+<script>
+// Función para mostrar la alerta personalizada
+function mostrarAlertaPersonalizada() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "block";
+}
+
+// Función para cerrar la alerta personalizada
+function cerrarAlertaPersonalizada() {
+    var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+  
+  // Redirigir a flor.html
+  window.location.href = "flor.html";
+}
+</script>
+
+</body>
+</html>
